@@ -94,7 +94,7 @@ static void acpi_pcc_generate_keyinput(struct pcc_acpi *pcc)
 
     rc = acpi_evaluate_integer(pcc->handle, METHOD_HBTN_QUERY,
                    NULL, &result);
-    if (!ACPI_SUCCESS(rc)) {
+    if (ACPI_FAILURE(rc)) {
         ACPI_DEBUG_PRINT((ACPI_DB_ERROR,
                  "error getting hbtn status\n"));
         return;
