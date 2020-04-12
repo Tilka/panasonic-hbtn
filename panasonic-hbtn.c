@@ -28,8 +28,6 @@
 #include <linux/uaccess.h>
 #include <linux/slab.h>
 #include <linux/acpi.h>
-#include <acpi/acpi_bus.h>
-#include <acpi/acpi_drivers.h>
 #include <linux/input.h>
 #include <linux/input/sparse-keymap.h>
 
